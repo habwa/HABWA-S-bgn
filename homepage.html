@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome page</title>
+    <style>
+    #demo {
+        color: blue;
+        text-align: center;
+        font-size: xx-large;
+    
+    }
+    #mo {
+        color: blue;
+        text-align: center;
+        font-size: xx-large;
+    
+    }
+    #de {
+        color: blue;
+        text-align: center;
+        font-size: xx-large;
+    
+    }
+    #for {
+        color: blue;
+        text-align: center;
+        font-size: xx-large;
+    
+    }
+    #dmo {
+        color: blue;
+        text-align: center;
+        font-size: xx-large;
+    
+    }
+    #dem1 {
+        position: fixed;
+        color: blue;
+        text-align: center;
+        font-size: xx-large;
+        float: left;
+    }
+    </style>
+</head>
+<body>
+  <p id="dem1"></p>
+    <p id="oo"></p>
+    <p id="ary"></p>
+    <p id="demo">Good Evening!</p>
+    <p id="de"></p>
+    <p id="for"></p>
+    <h2>JavaScript Confirm Box</h2>
+    <button onclick="clearInterval(myVar)">Stop time</button>
+
+
+
+<button onclick="mFunction()">Try it</button>
+
+<p id="emo"></p>
+    <script>
+    if (new Date().getHours() < 18) {
+      document.getElementById("demo").innerHTML = "Good day!";
+    }
+    </script>
+  <button onclick=" myGreetings()">click here for welcome</button>
+  <p id="mo"></p>
+  <p> enter the age to see my nieces</p>
+  <input type="number" id="gg"> <button  onclick="myNiece()">click to see my nieces</button>
+  <p id="yola"></p>
+  <p>Please input a number between 5 and 10:</p>
+
+<input id="in" type="text">
+<button type="button" onclick="yFunction()">Test Input</button>
+<p id="p01"></p>
+  <script>
+      function myGreetings(){
+          var greetings;
+          var time= new Date().getHours();
+          if(time<10){
+              greetings="good morning";
+          }
+          else if(time<18){
+              greetings="have a good day";
+          }
+          else {
+              greetings="good evening";
+          }
+          document.getElementById("mo").innerHTML=greetings;
+    
+      }
+      function myNiece() {
+          var age;
+          var name;
+          age= document.getElementById("gg").Value;
+          if(age<5){
+              name=" futanga"; 
+          }
+          else if(age<15){
+              name="oda";
+          }
+          else{
+              name="icyamamare";
+          }
+          document.getElementById("yola").innerHTML=name;
+          }
+      
+          var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("de").innerHTML = "Today is " + day;
+
+var nie = [ "icyamamare","oda","comfort",];
+var txt ="";
+var i;
+for(i=0;i< nie.length;i++){
+    txt+=nie[i]+"<br>";
+}
+document.getElementById('for').innerHTML=txt;
+
+var tx = "";
+var person = {fname:"comfort", lname:"munezero", age:25}; 
+var x;
+for (x in person) {
+  tx += person[x] + " ";
+}
+document.getElementById("oo").innerHTML = tx;
+let np ="";
+let prs =["icyamamre","oda","comfort","rugero","futanga","rui"];
+for( let y of prs){
+    np+= y+ "<br>";
+}
+document.getElementById("ary").innerHTML=np;
+
+function yFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("in").value;
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5)  throw "too low";
+    if(x > 10)   throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+}
+function mFunction() {
+  var tt;
+  if (confirm("Press a button!")) {
+    tt = "You pressed OK!";
+  } else {
+    tt = "You pressed Cancel!";
+  }
+  document.getElementById("emo").innerHTML = tt;
+}
+  </script>
+  <h2>JavaScript Prompt</h2>
+
+  <button onclick="hFunction()">Try it</button>
+  
+  <p id="dmo"></p>
+  
+  <script>
+  function hFunction() {
+    var xt;
+    var person = prompt("Please enter your name:", "");
+    if (person == null || person == "") {
+      xt = "User cancelled the prompt.";
+    } else {
+      xt = "Hello " + person + "! How are you today?";
+    }
+    document.getElementById("dmo").innerHTML = xt;
+  }
+  </script>
+  <h>this is line break in popbox</h>
+  <button onclick="alert('Hello\nHow are you?')">Try it</button>
+  <p>A script on this page starts this clock:</p>
+
+  
+  <script>
+  var myVar = setInterval(myTimer, 1000);
+  
+  function myTimer() {
+    var d = new Date();
+    document.getElementById("dem1").innerHTML = d.toLocaleTimeString();
+  }
+  </script>
+  <!--stop time-->
+  <script>
+    var myVar = setInterval(myTimer ,1000);
+    function myTimer() {
+      var d = new Date();
+      document.getElementById("dem1").innerHTML = d.toLocaleTimeString();
+    }
+</body>
+</html>

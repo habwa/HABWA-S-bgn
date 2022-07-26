@@ -1,0 +1,540 @@
+
+    body {
+        background-color: rgba(73, 89, 133, 0.4);
+    opacity: 0.9;
+    counter-reset: section;
+
+          }
+          #CONTAINER1 {
+        margin-left:25%;
+        padding:1px 3px;
+        height:100%;
+          }
+          
+          #CONTAINER2 {
+            margin: 10 px;
+            padding: 5px;
+            overflow: hidden;
+            position: fixed; 
+            height: 50px;
+          }
+          #CONT1 {
+              display: flex;
+              list-style-type: none;
+          }
+          #CONTAINER4 {
+            padding:20px; 
+            height:20px;
+            bottom: 0%;
+            position: fixed;
+            width: 100%;
+          }
+          #CONTAINER5 {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+          }
+          #dr {
+              padding: 4px;
+              display:block;
+              overflow: auto;
+              /* iwill learn more about Dropdown Navbar
+             How to add a dropdown menu inside a navigation bar. */
+          }
+     h2 {
+       border:solid rgb(211, 71, 181);
+       padding:10px;
+       margin: 30px;
+       }
+       div {
+           background-repeat:no-repeat;
+           background-size: cover;
+          /* border: 0.5px solid black;*/
+
+       }
+       table,td,th{
+           text-align: center;
+           width: 50%;
+           border-collapse: collapse;
+       }
+       #row {
+           background-color: blue;
+       }
+       .cls {
+           color:cornflowerblue
+       }
+       .multiple {
+           background-color: darkblue;
+           border:6px solid black;
+           padding: 15px;
+        
+       }
+       .one {
+           text-align:center;
+
+       }
+       #hd {
+           color:deeppink
+       }
+       
+/*form {
+    background-image: url(pc.JPG);
+    background-repeat: no-repeat;
+    background-position:  right top;
+    margin-right: 200px;
+    background-attachment: scroll;
+    
+}
+#grad1 {
+  height: 55px;
+  
+  background-image:
+   linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}*/
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+h1::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+  }
+  h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+  }
+  /*you can use section on orderd and unorded list*/
+p{
+    text-indent: 50px;
+    line-height: 0,9;
+    word-spacing: 9px;
+    white-space: wrap;
+    font-family: 'Courier New', Courier, monospace  ;
+}
+ a:link {
+     background-color: aqua;
+    text-decoration: none;
+    color: black;
+    padding: auto;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid green;
+
+
+ }
+ 
+ a:visited {
+     text-decoration: underline;
+ }
+ a:hover {
+     background-color: rgb(205, 179, 230);
+     font-size:150%;
+ }
+ a:active {
+    color: hotpink;
+
+     }
+     th,td {
+        border: 1px solid black;
+        
+    }
+    .spn1 {
+        cursor: wait;
+
+    }
+    textarea {
+        cursor: auto;
+    }
+    input {
+        cursor: wait;
+    }
+    img {
+        opacity: 0.2;
+        cursor: pointer ;
+    }
+    img:hover {
+        opacity: 1;
+    }
+    link {
+        cursor: progress;
+    }
+.ul {
+    list-style-type: square;
+}
+.ol {
+    list-style-type: upper-roman;
+}
+/*.ul1 {
+    list-style-image:url(pc2.png);
+}* you can use image as style list and you can set list style postion inside or outside */
+ .ol1 {
+     list-style-type: none;
+ }
+ ul {
+     background-color: rgb(171, 171, 197);
+ }
+ ol {
+     background-color: rgb(158, 156, 160);
+     opacity: 10;
+ }
+ th {
+     height: 50px;
+     text-align: left;
+ }
+ td {
+     height: 45px;
+     vertical-align: bottom;
+ }
+tr:hover {
+    background-color: rgb(163, 163, 206);
+}/*
+li.{
+    display: inline;
+} you can display how you want your list not only list,there other element you can display*/
+
+/*.cont {
+    padding: 30px;
+     background-color: rgb(160, 160, 211);
+    display: flex;
+    position: fixed;
+    width: 500px;
+    height: 100px; */
+
+.pc {
+    position: absolute;
+    width: 300px;
+    height: 500px
+}
+#dv3 {
+    position: fixed;
+    margin-left: 70%;
+}
+#dd {
+    position: absolute;
+  top: 40px;
+  left: 30px;
+  font-size: 20px;
+}
+.dv4 {
+    height: 100px;
+    width: 100%;
+    border: 1px solid green;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: rgb(144, 144, 212);
+}
+/* ucan use float to reft or float right
+#mm {
+    float: right;
+}
+The clear property specifies what elements can float beside the cleared element and on which side.
+and you can use overfloa to fix the flow words*/
+ .container {
+     padding: 30px;
+     background-color: rgb(160, 160, 211);
+    display: flex;
+    margin: 10px;
+
+   
+ }
+ .prs{
+     font-size: 18pxww;
+     font-style: normal;
+     font-weight: bolder;
+     font-family: 'Courier New', Courier, monospace;
+     text-align: center;
+     margin: 10px;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(69, 69, 94);
+ }
+ .yl {
+    margin: 10px;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+     background-color: rgb(57, 57, 61);
+    }
+
+     .frm {
+         margin: 10px;
+         padding: 20px;
+         width: 400px;
+         height: 300px;
+         background-color: rgb(83, 83, 116);
+     }
+     .p {
+            font-size: 30;
+            line-height: 20px;
+     }
+ 
+ .l1 {
+     display:flex;
+     padding: 5px;
+ }
+ p::first-letter {
+     color: rgb(15, 14, 14);
+     font-size: 20px;
+ }
+
+.cont {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+  }
+  input[type=submit] {
+    width: 30%;
+    background-color: #aeadeb;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #8d8bee;;
+  }
+  input[type=text] {
+    width: 30%;
+    background-color: #cfceec;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=text]:hover {
+    background-color: #9b9af1;;
+  }
+  input[type=text]:focus {
+    background-color: lightblue;
+  }
+  input[type=password] {
+    width: 30%;
+    background-color: #cfceec;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=password]:hover {
+    background-color: #9b9af1;;
+  }
+  input[type=password]:focus {
+    background-color: lightblue;
+  }
+  input[type=tel] {
+    width: 30%;
+    background-color: #cfceec;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=tel]:hover {
+    background-color: #9b9af1;;
+  }
+  input[type=tel]:focus {
+    background-color: lightblue;
+  }
+  input[type=email] {
+    width: 30%;
+    background-color: #cfceec;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=email]:hover {
+    background-color: #9b9af1;;
+  }
+  input[type=email]:focus {
+    background-color: lightblue;
+  }
+  input[type=date] {
+    width: 30%;
+    background-color: #cfceec;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=date]:hover {
+    background-color: #9b9af1;;
+  }
+  input[type=date]:focus {
+    background-color: lightblue;
+  }
+  input[type=file] {
+    width: 20%;
+    background-color: #cfceec;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=file]:hover {
+    background-color: #9b9af1;;
+  }
+  input[type=file]:focus {
+    background-color: lightblue;
+  }
+  input[type=reset] {
+    width: 20%;
+    background-color: #cfceec;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=reset]:hover {
+    background-color: #9b9af1;;
+  }
+  input[type=reset]:focus {
+    background-color: lightblue;
+  }
+  button{
+    width: 20%;
+    background-color: #cfceec;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #abaaf3;;
+  }
+  button:focus {
+    background-color: lightblue;
+  }
+ .srch {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #a5a4ec;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    position: fixed;
+  }
+  textarea {
+    width: 70%;
+    height: 300px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color:#b9b8e9;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .fakeimg {
+    background-color: #aaa;
+    width: 70%;
+    padding: 20px;
+  }
+  .leftcolumn {   
+    float: left;
+    width: 70%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .fakeimg {
+    border-radius: 70px;
+    background:#a5a4ec;
+    padding: 50px; 
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    font-size: 40px;
+
+  }
+  a {
+    font-size: 20px;
+    font-weight: 50;
+    font-style: italic;
+  }
+  /* here you can use othe border-radius in other to make defferent shape*/
+  .cc1 :hover {
+    width: 300px;
+  }
+  .cc1 {
+      width: 100px;
+      height: 100px;
+      background: rgb(201, 149, 149);
+      transition: width 2s;
+      border: 1px solid black;
+    }
+  #dem {
+    position: fixed;
+  }
+  
+  
+  
+
+
